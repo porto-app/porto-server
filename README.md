@@ -4,3 +4,4 @@
 -   Andy Zhong
 -   Kimberly Kruedelbach
 -   Zak Rehbein
+-   Lawrence Hau
