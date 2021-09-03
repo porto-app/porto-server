@@ -3,3 +3,4 @@
 ## Team Members
 -   Andy Zhong
 -   Kimberly Kruedelbach
+-   Zak Rehbein
