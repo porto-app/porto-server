@@ -2,3 +2,4 @@
 
 ## Team Members
 -   Andy Zhong
+-   Kimberly Kruedelbach
