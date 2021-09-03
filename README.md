@@ -7,6 +7,6 @@
 -   Lawrence Hau
 
 ## Required NPMjs
-npm i mongoose@5.13.8
-npm i express
-npm i nodemon
+-   npm i mongoose@5.13.8
+-   npm i express
+-   npm i nodemon
