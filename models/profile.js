@@ -1,5 +1,5 @@
 
-const mongoose = require('../backend/db/connection')
+const mongoose = require('../db/connection')
 
 const userSchema = new mongoose.Schema({
     eMail:{type: String, required: true},
@@ -25,13 +25,9 @@ const userSchema = new mongoose.Schema({
     Project4Description:{type:String},
     Project4URL:{type:String},
     Project4Img:{type:String},
-    owner: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'profile'
-    }
 
 })
 
-const Users = mongoose.model("Users", userSchema);
+const User = mongoose.model("User", userSchema);
 
-module.exports = Model;
+module.exports = User;
