@@ -1,8 +1,7 @@
 
-const mongoose = require('../db/connection')
-const Schema = mongoose.Schema
+const mongoose = require('../backend/db/connection')
 
-const userSchema = new Schema({
+const userSchema = new mongoose.Schema({
     eMail:{type: String, required: true},
     firstName: {type: String, required: true},
     middleName: {type: String},
@@ -26,6 +25,10 @@ const userSchema = new Schema({
     Project4Description:{type:String},
     Project4URL:{type:String},
     Project4Img:{type:String},
+    owner: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'profile'
+    }
 
 })
 
