@@ -1,0 +1,21 @@
+<header class="d-flex justify-content-between align-items-center"></header>
+<h1>Profiles</h1>
+<a href="/profiles/new" class="btn btn-primary ">New Profiles</a>
+</header>
+<ul class="list-group">
+    {{#each profiles}}
+    <li class="list-group-item d-flex justify-content-between">
+        <div><h4>Name: </h4>{{this.firstName}} {{this.middleName}} {{this.lastName}}</div>
+        <div><h4>Email: </h4>{{this.eMail}}</div>
+        <div><h4>ID: </h4> {{this._id}}</div>
+        <div class="links">
+            <a href = "/profiles/{{this.id}}" class="btn btn-info">View</a>
+            <a href="/profiles/{{this.id}}/edit" class="btn btn-primary">Edit</a>
+
+<form action="/profiles/{{this.id}}?_method=DELETE" method="POST" class="d-inline">
+    <input type="submit" value="Delete" class="btn btn-danger" />
+</form>
+        </div>
+    </li>
+    {{/each}}
+</ul> 

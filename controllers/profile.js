@@ -9,6 +9,18 @@ router.get("/", (req,res,next) => {
     .catch(next);
 })
 
+// router.get('/', (req, res) => {
+
+//     User.find({})
+//     .then(users => {
+//         const Aug = profiles.map(item => {
+//             return {...item.doc, titleEncoded:item.title.split('').join('+') }
+//         })
+//         res.render('layout/home', {layout})
+//     })
+//     .catch(console.error)
+// })
+
 router.get("/:id", (req, res, next) => {
     User.findById(req.params.id)
     .then((bookmark) => res.json(bookmark))

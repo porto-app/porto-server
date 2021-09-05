@@ -1,19 +1,23 @@
-//npm i express required
 const express = require('express')
+const profilesController = require('./controllers/profile')
+const methodOverride = require('method-override')
 const app = express()
 
+//must be above roots
+app.use(methodOverride('_method'))
 app.use(express.json())
-app.use(express.urlencoded({
-    extended:true
-}));
+app.use(express.static('views/images')); 
+app.use(express.urlencoded({extended:true}))
+app.set('view engine', 'hbs')
 
-//start controller
+//start routes
+app.get('/', (req, res) => {res.send('welcome to the home page')})
+app.use('/profiles', profilesController)
 
-const profileController = require("./controllers/profiles")
-app.use("/profiles/", profileController)
+//end routes
 
-//end controller
-const port = 3000
+const port = process.env.PORT || 5000
+
 app.listen(port, () => {
-    console.log(`running on port ${port}`)
+    console.log(`express is runnong on ${port}`)
 })
