@@ -4,22 +4,17 @@ const router = express.Router()
 const Profile = require('../models/profile-model')
 
 // Get All
-router.get("/", (req, res, next) => {
-    Profile.find({})
-        .then(profiles => res.json(profiles))
-        .catch(next)
-})
 
-// router.get('/',(req, res) => {
-//     Profile.find({})
-//     .then(profiles => {
-//         const profilesAug = profiles.map(item => {
-//             return{...item.doc, titleEncoded:item.title.split('').join('+')}
-//         })
-//         res.render('profiles/index', {profiles})
-//     })
-//     .catch(console.error)
-// })
+router.get('/',(req, res) => {
+    Profile.find({})
+    .then(profiles => {
+        const profilesAug = profiles.map(item => {
+            return{...item.doc, titleEncoded:item.title.split('').join('+')}
+        })
+        res.render('profiles/index', {profiles})
+    })
+    .catch(console.error)
+})
 
 router.get('/new', (req, res) => {
     res.render('profiles/new')
