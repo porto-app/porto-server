@@ -23,7 +23,7 @@ router.get('/new', (req, res) => {
 router.post('/', (req, res) => {
     Profile.create(req.body)
     .then((profile) => {
-        res.redirect('/profiles');
+        res.redirect('/server');
     })
     .catch(console.error);
 })
@@ -81,10 +81,9 @@ router.put('/:id', (req,res) => {
 
 router.get('/:id', (req, res) => {
     Profile.findById(req.params.id)
-    .then(profile => res.json(profile)) // Was missing this line
-    // .then(profile => {
-    //     res.render('profiles/show', profile)
-    // })
+    .then(profile => {
+        res.render('profiles/show', profile)
+    })
     .catch(fatalError =>{
         console.error(fatalError)
         res.send("There has been a fatal error!")
@@ -95,7 +94,7 @@ router.delete('/:id', (req, res) => {
     const id = req.params.id;
     Profile.findOneAndRemove({ _id: id })
     .then(() => {
-        res.redirect('/profiles');
+        res.redirect('/server');
     })
     .catch(console.error)
 })
