@@ -6,7 +6,7 @@
     {{#each profiles}}
     <li class="list-group-item d-flex justify-content-between">
         <div><h4>Name: </h4>{{this.firstName}} {{this.middleName}} {{this.lastName}}</div>
-        <div><h4>Email: </h4>{{this.eMail}}</div>
+        <div><h4>Email: </h4>{{this.email}}</div>
         <div><h4>ID: </h4> {{this._id}}</div>
         <div class="links">
             <a href = "/profiles/{{this.id}}" class="btn btn-info">View</a>
@@ -18,4 +18,4 @@
         </div>
     </li>
     {{/each}}
-</ul> 
+</ul>
