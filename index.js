@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors');
-const profilesController = require('./controllers/profile')
+const serverController = require('./controllers/profile')
+const clientController = require('./controllers/frontend')
 const methodOverride = require('method-override')
 const app = express()
 
@@ -14,7 +15,8 @@ app.set('view engine', 'hbs')
 
 //start routes
 app.get('/', (req, res) => {res.send('welcome to the home page')})
-app.use('/profiles', profilesController)
+app.use('/server', serverController)
+app.use('/profiles', clientController)
 
 //end routes
 

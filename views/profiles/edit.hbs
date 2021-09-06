@@ -1,7 +1,7 @@
 <!--views/todos/edit.hbs-->
 <h2>Edit Profiles:</h2>
 
-<form action="/profiles/{{this.id}}/?_method=put" method="POST">
+<form action="/server/{{this.id}}/?_method=put" method="POST">
     <div class="form-group">
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" class="form-control" value="{{this.email}}"required>
@@ -119,5 +119,5 @@
 
     </div>
     <input type="submit" value="Update Profile" class="btn btn-primary" />
-    <a href="/profiles/" class="btn btn-secondary">Cancel</a>
+    <a href="/server/" class="btn btn-secondary">Cancel</a>
 </form>
