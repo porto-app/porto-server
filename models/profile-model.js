@@ -25,7 +25,6 @@ const userSchema = new mongoose.Schema({
     Project4Description:{type:String},
     Project4URL:{type:String},
     Project4Img:{type:String},
-
 })
 
 const User = mongoose.model("User", userSchema);

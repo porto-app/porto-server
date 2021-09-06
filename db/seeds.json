@@ -1,0 +1,47 @@
+[
+    {
+        "email": "andy@zhong.com",
+        "firstName": "Andy",
+        "middleName": "J",
+        "lastName": "Zhong",
+        "title": "Software Developer",
+        "location": "Boston",
+        "urlPic": "https://a.ltrbxd.com/avatar/twitter/4/3/8/3/8/2/shard/http___pbs.twimg.com_profile_images_959679433505497089__0ShmWMC.jpg"
+    },
+    {
+        "email": "roxie@schnoor.com",
+        "firstName": "Roxie",
+        "middleName": "",
+        "lastName": "Schnoor",
+        "title": "Software Developer",
+        "location": "California",
+        "urlPic": "https://a.ltrbxd.com/avatar/twitter/4/3/8/3/8/2/shard/http___pbs.twimg.com_profile_images_959679433505497089__0ShmWMC.jpg"
+    },
+    {
+        "email": "lawrence@hau.com",
+        "firstName": "Lawrence",
+        "middleName": "",
+        "lastName": "Hau",
+        "title": "Software Developer",
+        "location": "New York",
+        "urlPic": "https://a.ltrbxd.com/avatar/twitter/4/3/8/3/8/2/shard/http___pbs.twimg.com_profile_images_959679433505497089__0ShmWMC.jpg"
+    },
+    {
+        "email": "kim@kruedelbach.com",
+        "firstName": "Kimberly",
+        "middleName": "",
+        "lastName": "Kruedelbach",
+        "title": "Software Developer",
+        "location": "New York",
+        "urlPic": "https://a.ltrbxd.com/avatar/twitter/4/3/8/3/8/2/shard/http___pbs.twimg.com_profile_images_959679433505497089__0ShmWMC.jpg"
+    },
+    {
+        "email": "zak@rehbein.com",
+        "firstName": "Zachary",
+        "middleName": "",
+        "lastName": "Rehbein",
+        "title": "Software Developer",
+        "location": "Arizona",
+        "urlPic": "https://a.ltrbxd.com/avatar/twitter/4/3/8/3/8/2/shard/http___pbs.twimg.com_profile_images_959679433505497089__0ShmWMC.jpg"
+    }
+]
