@@ -86,9 +86,10 @@ router.put('/:id', (req,res) => {
 
 router.get('/:id', (req, res) => {
     Profile.findById(req.params.id)
-    .then( profile => {
-        res.render('profiles/show', profile)
-    })
+    .then(profile => res.json(profile)) // Was missing this line
+    // .then(profile => {
+    //     res.render('profiles/show', profile)
+    // })
     .catch(fatalError =>{
         console.error(fatalError)
         res.send("There has been a fatal error!")
