@@ -5,8 +5,13 @@
 -   Kimberly Kruedelbach
 -   Zak Rehbein
 -   Lawrence Hau
+-   Roxie Schnoor
 
-## Required NPMjs
--   npm i mongoose@5.13.8
--   npm i express
--   npm i nodemon
+## Required Node Packages
+-   cors
+-   express
+-   handlebars
+-   hbs
+-   method-override
+-   mongoose@5.13.8,
+-   nodemon
