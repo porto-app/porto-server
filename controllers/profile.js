@@ -3,16 +3,23 @@ const router = express.Router()
 
 const Profile = require('../models/profile-model')
 
-router.get('/',(req, res) => {
+// Get All
+router.get("/", (req, res, next) => {
     Profile.find({})
-    .then(profiles => {
-        const profilesAug = profiles.map(item => {
-            return{...item.doc, titleEncoded:item.title.split('').join('+')}
-        })
-        res.render('profiles/index', {profiles})
-    })
-    .catch(console.error)
+        .then(profiles => res.json(profiles))
+        .catch(next)
 })
+
+// router.get('/',(req, res) => {
+//     Profile.find({})
+//     .then(profiles => {
+//         const profilesAug = profiles.map(item => {
+//             return{...item.doc, titleEncoded:item.title.split('').join('+')}
+//         })
+//         res.render('profiles/index', {profiles})
+//     })
+//     .catch(console.error)
+// })
 
 router.get('/new', (req, res) => {
     res.render('profiles/new')
@@ -40,7 +47,7 @@ router.put('/:id', (req,res) => {
     Profile.findOneAndUpdate(
         { _id: id },
         {
-        
+
         email:                          req.body.email,
         firstName:                      req.body.firstName,
         middleName:                     req.body.middleName,
@@ -53,22 +60,22 @@ router.put('/:id', (req,res) => {
         Project1Description:            req.body.Project1Description,
         Project1URL:                    req.body.Project1URL,
         Project1Img:                    req.body.Project1Img,
-        
+
         Project2Name:                   req.body.project2Name,
         Project2Description:            req.body.Project2Description,
         Project2URL:                    req.body.Project2URL,
         Project2Img:                    req.body.Project2Img,
-        
+
         Project3Name:                   req.body.project3Name,
         Project3Description:            req.body.Project3Description,
         Project3URL:                    req.body.Project3URL,
         Project3Img:                    req.body.Project3Img,
-        
+
         Project4Name:                   req.body.project4Name,
         Project4Description:            req.body.Project4Description,
         Project4URL:                    req.body.Project4URL,
         Project4Img:                    req.body.Project4Img,
-        
+
         },
         { new: true }
     )
