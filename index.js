@@ -20,8 +20,10 @@ app.use('/profiles', clientController)
 
 //end routes
 
-const port = process.env.PORT || 5000
+app.set("port", process.env.PORT || 5000);
 
-app.listen(port, () => {
-    console.log(`express is runnong on ${port}`)
-})
+app.listen(app.get("port"), () => {
+console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
+
+

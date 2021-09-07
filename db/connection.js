@@ -6,9 +6,10 @@ const mongoose = require('mongoose');
 // When we're working locally, we'll have a local DB,
 // but in production, we'll have to have a database
 // that's connected to the Internet.
-const mongoURI =
+
+const mongoURI = 
 process.env.NODE_ENV === 'production' 
-? process.env.DB_URL: 'mongodb://localhost:27017/express-mvc';
+? process.env.DB_URL: 'mongodb://localhost/porto-server';
 
 // Use the mongoose connect method to connect to the
 // database.  The connect method takes two arguments:
