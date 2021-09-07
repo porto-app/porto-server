@@ -1,0 +1,123 @@
+<!--views/todos/edit.hbs-->
+<h2>Edit Profiles:</h2>
+
+<form action="/server/{{this.id}}/?_method=put" method="POST">
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" class="form-control" value="{{this.email}}"required>
+    </div>
+
+    <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" class="form-control" value="{{this.firstName}}" required>
+    </div>
+
+    <div class="form-group">
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName" class="form-control" value="{{this.middleName}}">
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" class="form-control" value="{{this.lastName}}" required>
+    </div>
+
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" class="form-control" value="{{this.title}}" required>
+    </div>
+
+    <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" class="form-control" value="{{this.location}}" required>
+    </div>
+
+    <div class="form-group">
+        <label for="urlPic">Profile Pic URL:</label>
+        <input type="text" id="urlPic" name="urlPic" class="form-control" value="{{this.urlPic}}" required>
+    </div>
+
+    <div class="form-group">
+        <label for="Project1Name">Project One Name:</label>
+        <input type="text" id="Project1Name" name="Project1Name" class="form-control" value="{{this.Project1Name}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project1Description">Project One Description:</label>
+        <input type="text" id="Project1Description" name="Project1Description" class="form-control" value="{{this.Project1Description}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project1URL">URL to Project One:</label>
+        <input type="text" id="Project1URL" name="Project1URL" class="form-control" value="{{this.Project1URL}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project1Img">URL to Project One Image:</label>
+        <input type="text" id="Project1Img" name="Project1Img" class="form-control" value="{{this.Project1Img}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project2Name">Project Two Name:</label>
+        <input type="text" id="Project2Name" name="Project2Name" class="form-control" value="{{this.Project2Name}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project2Description">Project Two Description:</label>
+        <input type="text" id="Project2Description" name="Project2Description" class="form-control" value="{{this.Project2Description}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project2URL">URL to Project Two:</label>
+        <input type="text" id="Project2URL" name="Project2URL" class="form-control" value="{{this.Project2URL}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project2Img">URL to Project Two Image:</label>
+        <input type="text" id="Project2Img" name="Project2Img" class="form-control" value="{{this.Project2Img}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project3Name">Project Three Name:</label>
+        <input type="text" id="Project3Name" name="Project3Name" class="form-control" value="{{this.Project3Name}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project3Description">Project Three Description:</label>
+        <input type="text" id="Project3Description" name="Project3Description" class="form-control" value="{{this.Project3Description}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project3URL">URL to Project Three:</label>
+        <input type="text" id="Project3URL" name="Project3URL" class="form-control" value="{{this.Project3URL}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project3Img">URL to Project Three Image:</label>
+        <input type="text" id="Project3Img" name="Project3Img" class="form-control" value="{{this.Project3Img}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project4Name">Project Four Name:</label>
+        <input type="text" id="Project4Name" name="Project4Name" class="form-control" value="{{this.Project4Name}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project4Description">Project Four Description:</label>
+        <input type="text" id="Project4Description" name="Project4Description" class="form-control" value="{{this.Project4Description}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project4URL">URL to Project Four:</label>
+        <input type="text" id="Project4URL" name="Project4URL" class="form-control" value="{{this.Project4URL}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Project4Img">URL to Project Four Image:</label>
+        <input type="text" id="Project4Img" name="Project4Img" class="form-control" value="{{this.Project4Img}}">
+    </div>
+
+    </div>
+    <input type="submit" value="Update Profile" class="btn btn-primary" />
+    <a href="/server/" class="btn btn-secondary">Cancel</a>
+</form>
