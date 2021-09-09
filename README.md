@@ -54,14 +54,14 @@ We needed to create a back end database for our application, in order to do that
 ## Results
 
 **Index For Back-End**
-<img width="800" src="./readMeImages/indexpage.png" alt=" ">
+<img width="800" src="./readMeImages/indexpage.PNG" alt=" ">
 
 **Views for Back-End**
-<img width="800" src="./readMeImages/viewspage.png" alt=" ">
+<img width="800" src="./readMeImages/viewspage.PNG" alt=" ">
 
 **Create a New Profile for Back-End**
-<img width="800" src="./readMeImages/AddNewProfilePage.png" alt=" ">
+<img width="800" src="./readMeImages/AddNewProfilePage.PNG" alt=" ">
 
 **Edit a Profile for Back-End**
-<img width="800" src="./readMeImages/EditProfilePage.png" alt=" ">
+<img width="800" src="./readMeImages/EditProfilePage.PNG" alt=" ">
 
