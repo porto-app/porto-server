@@ -50,6 +50,7 @@ router.put('/:id', (req,res) => {
         title:                          req.body.title,
         location:                       req.body.location,
         urlPic:                         req.body.urlPic,
+        urlResume:                      req.body.urlResume,
 
         Project1Name:                   req.body.project1Name,
         Project1Description:            req.body.Project1Description,
