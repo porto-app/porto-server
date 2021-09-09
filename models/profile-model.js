@@ -9,6 +9,7 @@ const userSchema = new mongoose.Schema({
     title: {type: String, required: true},
     location: {type: String, required: true},
     urlPic: {type: String, required: true},
+    urlResume: {type: String, required: true},
     Project1Name:{type: String},
     Project1Description:{type:String},
     Project1URL:{type:String},
